@@ -19,13 +19,7 @@ centerY = 2
 
 //Script d'érosion
 
-imgFinal = Inverse(imgFinal)
-
-calc = Mirror(calc, centerX, centerY)
-
-imgFinal = Dilatation(imgFinal, calc, centerX, centerY)
-
-imgFinal = Inverse(imgFinal)
+imgFinal = Erosion(imgFinal, calc, centerX, centerY)
 
 
 //Display

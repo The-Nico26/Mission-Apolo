@@ -9,12 +9,7 @@ image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"Gliese 667Cc_surface"+".pbm")
 
 //Script de Test
 //Normalisation
-valMax = max(image)-min(image)
-
-taille = length(image)
-for x=1:taille
-    image(x) = image(x)*255/valMax
-end
+image = Normalisation(image)
 
 //Display
 display_gray(image)

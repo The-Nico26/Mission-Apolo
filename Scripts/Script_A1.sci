@@ -8,7 +8,6 @@ function res=SearchGrey(image)
     for x = 1:tailleX
         for y = 1:tailleY
             if image(x,y) == va then
-                
                 disp(string(x)+";"+string(y))
             end,
         end
