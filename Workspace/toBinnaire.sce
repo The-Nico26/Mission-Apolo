@@ -19,7 +19,7 @@ centerY = 2
 
 //Script d'érosion
 
-imgFinal = Erosion(imgFinal, calc, centerX, centerY)
+imgFinal = Erosion(imgFinal)
 
 
 //Display

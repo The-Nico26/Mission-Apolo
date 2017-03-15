@@ -4,7 +4,7 @@ function res=Normalisation(image)
 
     taille = length(image)
     for x=1:taille
-        image(x) = round(((image(x)-valMin)*255)/(valMax-valMin)
+        image(x) = round(((image(x)-valMin)*255)/(valMax-valMin))
     end
     
     res = image
