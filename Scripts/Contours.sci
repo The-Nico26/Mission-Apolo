@@ -15,18 +15,7 @@ function res=Contours(image, indice)
     img1 = Convolution(image, calc, centerX, centerY, indice)
     img2 = Convolution(image, calc2, centerX, centerY, indice)
     
-    sizeImg1X = size(image, 1)
-    sizeImg1Y = size(image, 2)
-    
-    imgFinal = image;
-    
-    for x=1:sizeImg1X
-        for y=1:sizeImg1Y
-            imgFinal(x,y) = round(sqrt((img1(x,y)^2 + img2(x,y)^2)))
-        end
-    end
-    
-    imgFinal = NormalisationSB(imgFinal)
+    imgFinal = NormalisationSB(Assemblage(img1, img2))
     
     res = imgFinal
 endfunction

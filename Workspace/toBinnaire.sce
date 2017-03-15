@@ -11,7 +11,11 @@ img = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"Formes"+".pbm")
 imgFinal = ToBinary(img, 100)
 
 //Script de dilation
-calc = [0, 0, 0; 0, 255, 255; 0, 255, 0;]
+calc = [
+0, 0, 0; 
+0, 255, 255; 
+0, 255, 0;]
+
 centerX = 2
 centerY = 2
 
