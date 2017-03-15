@@ -1,14 +1,15 @@
 //Variable Local
 DIR_IMG_NAME = "../Images/"
-DIR_IMG_MISSION = "A1/"
+DIR_IMG_MISSION = "A2/"
 DIR_SCRIPT_NAME = "../Scripts/"
 
 //Load Image
 getd(DIR_SCRIPT_NAME)
-image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"Encelade_surface.pbm")
+image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"Mars_surface.pbm")
 
-//Script A1
-SearchGrey(image)
+//Script A2
+
+
 
 //Display
 display_gray(image)
