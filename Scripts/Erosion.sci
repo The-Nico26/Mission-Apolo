@@ -1,4 +1,9 @@
-function res=Erosion(img, calc, centerX, centerY)
+function res=Erosion(img)
+    
+    calc = [0, 0, 0; 0, 255, 255; 0, 255, 0;]
+    centerX = 2
+    centerY = 2
+    
     img = Inverse(img)
 
     calc = Mirror(calc, centerX, centerY)
