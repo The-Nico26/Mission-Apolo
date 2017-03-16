@@ -22,4 +22,4 @@ disp(string(round(res/2.55)))
 display_gray(image)
 
 //Save
-writepbm(image, "final/A2.pbm")
+//writepbm(image, "final/A2.pbm")
