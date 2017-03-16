@@ -2,6 +2,7 @@
 DIR_IMG_NAME = "../Images/"
 DIR_IMG_MISSION = "A3/"
 DIR_SCRIPT_NAME = "../Scripts/"
+funcprot(0);
 
 //Load Image
 getd(DIR_SCRIPT_NAME)
@@ -22,4 +23,4 @@ imgFinal = Normalisation(imgFinal)
 display_gray(imgFinal)
 
 //Save
-//writepbm(image, "random/test.pbm")
+writepbm(imgFinal, "final/A3.pbm")

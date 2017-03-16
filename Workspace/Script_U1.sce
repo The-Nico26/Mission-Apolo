@@ -2,6 +2,7 @@
 DIR_IMG_NAME = "../Images/"
 DIR_IMG_MISSION = "U1/"
 DIR_SCRIPT_NAME = "../Scripts/"
+funcprot(0);
 
 //Load Image
 getd(DIR_SCRIPT_NAME)
@@ -18,4 +19,4 @@ imgFinal = Contours(image, 6)
 display_gray(imgFinal)
 
 //Save
-//writepbm(image, "random/test.pbm")
+writepbm(imgFinal, "final/U1.pbm")

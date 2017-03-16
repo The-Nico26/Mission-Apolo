@@ -1,6 +1,12 @@
-Dir_image = "C:\Users\Victor\Documents\GitHub\Mission-Apolo\Images\B3\"
+Dir_image = "../Images/B3/"
+R1esultMission =  "final/"
+funcprot(0);
+
+DIR_SCRIPT_NAME = "../Scripts/"
+getd(DIR_SCRIPT_NAME)
+
 image = readpbm(Dir_image +"HD215497.pbm")
-ResultMission = (Dir_image + "ResultatMission\")
+
 
 //Après étude de l'histogramme on défini les plages de couleurs
 Froid = ColorRange(image,0,19)
@@ -15,7 +21,7 @@ imgChaud = Normalisation(Chaud)
 imgBouillant = Normalisation(Bouillant)
 
 //On crée les images séparement
-writepbm(Froid,ResultMission+"B3Froid.pbm")
-writepbm(Frais,ResultMission+"B3Frais.pbm")
-writepbm(Chaud,ResultMission+"B3Chaud.pbm")
-writepbm(Bouillant,ResultMission+"B3Bouillant.pbm")
+writepbm(imgFroid,ResultMission+"B3Froid.pbm")
+writepbm(imgFrais,ResultMission+"B3Frais.pbm")
+writepbm(imgChaud,ResultMission+"B3Chaud.pbm")
+writepbm(imgBouillant,ResultMission+"B3Bouillant.pbm")

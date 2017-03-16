@@ -2,6 +2,7 @@
 DIR_IMG_NAME = "../Images/"
 DIR_IMG_MISSION = "A2/"
 DIR_SCRIPT_NAME = "../Scripts/"
+funcprot(0);
 
 //Load Image
 getd(DIR_SCRIPT_NAME)
@@ -21,4 +22,4 @@ disp(string(round(res/2.55)))
 display_gray(image)
 
 //Save
-writepbm(image, "random/test.pbm")
+writepbm(image, "final/A2.pbm")

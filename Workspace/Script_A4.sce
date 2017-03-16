@@ -2,6 +2,7 @@
 DIR_IMG_NAME = "../Images/"
 DIR_IMG_MISSION = "A4/"
 DIR_SCRIPT_NAME = "../Scripts/"
+funcprot(0);
 
 //Load Image
 getd(DIR_SCRIPT_NAME)
@@ -16,9 +17,9 @@ imgFinal = Remove(image, imgNoise)
 
 imgFinal = Normalisation(imgFinal)
 
-imgFinal = Median(imgFinal)
+imgFinal = Median(imgFinal, 2)
 //Display
 display_gray(imgFinal)
 
 //Save
-//writepbm(image, "random/test.pbm")
+writepbm(imgFinal, "final/A4.pbm")

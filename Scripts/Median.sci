@@ -1,4 +1,5 @@
-function res=Median(image)
+//function permettant d'insérer un filtre
+function res=Median(image, tolerance)
     sizeX = size(image, 1)
     sizeY = size(image, 2)
     
@@ -23,7 +24,7 @@ function res=Median(image)
             tabf = gsort(tab, 'g', 'i')
             nbr = image(x,y)
             
-            if(nbr > moy*2 | nbr < round(moy/2))
+            if(nbr > moy*tolerance | nbr < round(moy/tolerance))
                 imgFinal(x,y) = tabf(round(length(tab)/2))
             end
         end
