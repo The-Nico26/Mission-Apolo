@@ -10,8 +10,8 @@ function res=Median(image)
             somme = 0
             for xC=1:5
                 for yC=1:5
-                    coX = (x-2)+xC
-                    coY = (y-2)+yC
+                    coX = (x-3)+xC
+                    coY = (y-3)+yC
                     if ~(coX <= 0 | coY <= 0 | coX >= sizeX | coY >= sizeY) then 
                         somme = somme + image(coX, coY)
                         tab(index) = image(coX, coY)
