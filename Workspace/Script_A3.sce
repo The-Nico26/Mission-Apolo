@@ -17,10 +17,13 @@ centerX = 2
 centerY = 2
 
 imgFinal = Convolution(image, calc, centerX, centerY, 6)
-
+imgFinal = ColorRange(imgFinal, 50, 255)
 imgFinal = Normalisation(imgFinal)
+//imgFinal = Contours(image, 6)
 //Display
-display_gray(imgFinal)
 
+display_gray(imgFinal)
+//Histo(imgFinal)
+//Histo(image)
 //Save
 writepbm(imgFinal, "final/A3.pbm")

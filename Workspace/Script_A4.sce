@@ -17,9 +17,9 @@ imgFinal = Remove(image, imgNoise)
 
 imgFinal = Normalisation(imgFinal)
 
-imgFinal = Median(imgFinal, 2)
+imgFinal = Median(imgFinal, 1.2)
 //Display
 display_gray(imgFinal)
 
 //Save
-writepbm(imgFinal, "final/A4.pbm")
+//writepbm(imgFinal, "final/A4.pbm")
