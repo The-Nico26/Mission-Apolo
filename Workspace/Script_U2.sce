@@ -1,15 +1,17 @@
 //Variable Local
 DIR_IMG_NAME = "../Images/"
-DIR_IMG_MISSION = "X2/"
+DIR_IMG_MISSION = "U2/"
 DIR_SCRIPT_NAME = "../Scripts/"
 
 //Load Image
 getd(DIR_SCRIPT_NAME)
-image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"Gliese 581d"+".pbm")
+image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"U2_surface"+".pbm")
 
 //Script de Test
-//img = Convolution(image, calc, centerX, centerY, 17)
-img = Median(image)
+//Cors isolé
+
+img = ColorRange(NormalisationSB(Contours(image, 6)), 115, 255)
+
 //Display
 display_gray(img)
 
