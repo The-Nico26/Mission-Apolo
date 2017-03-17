@@ -20,7 +20,7 @@ function res=Moyenne(image, tolerance)
                     end
                 end
             end
-            moy = somme / length(tab)
+            moy = somme / index
             nbr = image(x,y)
             
             if(nbr > round(moy*tolerance) | nbr < round(moy/tolerance))

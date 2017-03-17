@@ -7,16 +7,23 @@ funcprot(0);
 //Load Image
 getd(DIR_SCRIPT_NAME)
 image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"Europa_surface"+".pbm")
-
+image = ColorRange(image, 200, 255)
+display_gray(image)
+figure
 //Script de Test
+calc = [
+0, 1, 0;
+1, 1, 1;
+0, 1, 0;]
 
-//imgFinal = Median(image, 2)
-imgFinal = ColorRange(image, 200, 255)
-//imgFinal = Moyenne(imgFinal, 2)
-//imgFinal = ColorRange(imgFinal, 50, 255)
+centerX = 2
+centerY = 2
+imgFinal = DilatationGray(image, calc, centerX, centerY, .9)
+
 //Display
 
 display_gray(imgFinal)
-
+//Histo(imgFinal)
+//Histo(image)
 //Save
-writepbm(imgFinal, "final/A3B.pbm")
+writepbm(imgFinal, "final/A3.pbm")

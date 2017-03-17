@@ -20,12 +20,12 @@ function res=Median(image, tolerance)
                     end
                 end
             end
-            moy = somme / length(tab)
+            moy = somme / index
             tabf = gsort(tab, 'g', 'i')
             nbr = image(x,y)
             
             if(nbr > moy*tolerance | nbr < round(moy/tolerance))
-                imgFinal(x,y) = tabf(round(length(tab)/2))
+                imgFinal(x,y) = tabf(round(index/2))
             end
         end
     end

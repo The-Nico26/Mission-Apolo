@@ -4,7 +4,6 @@ function res=Mirror(calc, centerX, centerY)
     tailleY = taille(2)
     H = zeros(tailleX, tailleY)
     
-    index = 0;
     for x=1:tailleX
         for y=1:tailleY
             if calc(x,y) == 255 then

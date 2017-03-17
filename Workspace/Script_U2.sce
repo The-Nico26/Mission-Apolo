@@ -9,6 +9,7 @@ getd(DIR_SCRIPT_NAME)
 image = readpbm(DIR_IMG_NAME+DIR_IMG_MISSION+"U2_surface"+".pbm")
 
 //Script de Test
+//imgFinal = Negation(Contours(image, 6))
 
 imgFinal = ColorRange(NormalisationSB(Contours(image, 6)), 115, 255)
 
